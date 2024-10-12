@@ -1,0 +1,234 @@
+<html>
+
+<head>
+    <title>Rental Cars</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@500&family=Ubuntu:wght@700&family=Work+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images\favicon-car.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body>
+    <section id="banner">
+        <img src="images/logo.png" class="logo">
+        <div class="banner-text">
+            <h1>Vlora's Rental</h1>
+            <p>Vlora's Rental, nestled in the picturesque coastal city of Vlore, Albania, stands as a premier car rental
+                business. With a commitment to providing top-notch service, Vlora’s Rental offers a diverse fleet of
+                well-maintained vehicles, catering to the varied needs of its clientele.</p>
+            <div class="banner-btn">
+                <a href="#cars"><span></span>Explore</a>
+            </div>
+        </div>
+        <div id="shiritiNav">
+            <nav>
+                <ul>
+                    <li><a href="#banner">Home</a></li>
+                    <li><a href="makinat.html">All Cars</a></li>
+                    <li><a href="#why">Why Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                    <li>
+                        <select id="selektor" onchange="NdryshoGjuhen()">
+                            <option value="index.php">English</option>
+                        </select>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="images/menu.png" id="menu">
+        </div>
+
+        <a href="https://wa.me/+355696613928?text=Hello%20Vlora's%20Rental,%20I%20am%20interested%20in%20renting%20a%20car."
+            class="ikon-w">
+            <i class="fa fa-whatsapp ikon-wp"></i>
+        </a>
+
+    </section>
+
+    <section id="cars">
+        <div class="titulli">
+            <p>EXPLORE OUR CAR CATEGORIES</p>
+            <h1>Choose from a wide range of vehicles to suit your needs.</h1>
+        </div>
+        <div class="card-container">
+            <div class="card"
+                style="background: linear-gradient(rgba(0, 0, 0, 0.5), #1C283D), url(images/pic-1.jpg) no-repeat center center/cover;">
+                <div class="card-content">
+                    <h3>Luxury</h3>
+                    <a href="makinat.html" class="btn">More</a>
+                </div>
+            </div>
+            <div class="card"
+                style="background: linear-gradient(rgba(0, 0, 0, 0.5), #1C283D), url(images/pic-2.jpg) no-repeat center center/cover;">
+                <div class="card-content">
+                    <h3>Top Rentals</h3>
+                    <a href="makinat.html" class="btn">More</a>
+                </div>
+            </div>
+            <div class="card"
+                style="background: linear-gradient(rgba(0, 0, 0, 0.5), #1C283D), url(images/pic-3.jpg) no-repeat center center/cover;">
+                <div class="card-content">
+                    <h3>SUV</h3>
+                    <a href="makinat.html" class="btn">More</a>
+                </div>
+            </div>
+            <div class="card"
+                style="background: linear-gradient(rgba(0, 0, 0, 0.5), #1C283D), url(images/pic-2.jpg) no-repeat center center/cover;">
+                <div class="card-content">
+                    <h3>Economic</h3>
+                    <a href="makinat.html" class="btn">More</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="why">
+        <div class="titulli">
+            <p>WHY CHOOSE</p>
+            <h1>Vlora's Rental</h1>
+        </div>
+        <div class="sherbimet-b">
+            <div class="sherbimet-">
+                <h1>Best Prices</h1>
+                <div class="sherbimet--desc">
+                    <div class="sherbimet--icon">
+                        <i class="fa fa-money"></i>
+                    </div>
+                    <div class="sherbimet--text">
+                        <p> At Vlora's Rental, we take pride in offering the best prices for an exceptional fleet of
+                            vehicles. With a commitment to customer satisfaction and transparent pricing, we strive to
+                            provide a seamless rental experience that won't break the bank. Explore the road ahead with
+                            confidence, knowing that at our rental car store, the best prices are just the beginning of
+                            your memorable travel experience.</p>
+                    </div>
+                </div>
+                <h1>Flexible Options</h1>
+                <div class="sherbimet--desc">
+                    <div class="sherbimet--icon">
+                        <i class="fa fa-gear"></i>
+                    </div>
+                    <div class="sherbimet--text">
+                        <p>Our rental service offers unparalleled flexibility to meet your unique travel needs. Whether
+                            you're planning a quick weekend getaway, an extended road trip, or require a vehicle for a
+                            specific duration, our flexible rental options have you covered. Choose the rental period
+                            that suits you best, ensuring that you have the freedom to tailor your journey according to
+                            your schedule. </p>
+                    </div>
+                </div>
+                <h1>24/7 Support</h1>
+                <div class="sherbimet--desc">
+                    <div class="sherbimet--icon">
+                        <i class="fa fa-globe"></i>
+                    </div>
+                    <div class="sherbimet--text">
+                        <p>Experience peace of mind with our 24/7 customer support, ensuring assistance is just a call
+                            away at any hour. Our dedicated team is committed to providing around-the-clock support,
+                            ready to address your inquiries, concerns, or unexpected situations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="footer">
+        <div class="titulli" style="color: white;">
+            <p style="color: white;">CONTACT</p>
+            <h1>Get In Touch With Us</h1>
+        </div>
+        <div class="footer-rreshti">
+            <div class="footer-djathtas">
+                <h1>Adress</h1>
+                <p>Skele, Rruga Kosova, Vlore 9401<i class="fa fa-map-marker"></i></p>
+                <a href="mailto:vlorasrental@gmail.com">
+                    <p>vlorasrental@gmail.com<i class="fa fa-paper-plane"></i></p>
+                </a>
+                <a href="tel:+3556868686" <p>+355 68 68 868<i class="fa fa-phone"></i></p></a>
+            </div>
+        </div>
+        <div id="map" class="harta">
+            <iframe
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDdAr_WzQz_4SfTQ4xTRrerYw8Nf5cI-Wo&q=40.4596,19.4914"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="rrjetet-sociale">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <p><span id="viti"></span> - <span id="DitaJaves"></span> <br> &copy; All Rights Reserved By Redi Çapoj </p>
+        </div>
+
+    </section>
+
+
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("shiritiNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "images/close.png";
+            }
+            else {
+                sideNav.style.right = "-250px";
+                menu.src = "images/menu.png";
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            var navLinks = document.querySelectorAll('#shiritiNav nav ul li a');
+
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+
+                    navLinks.forEach(function (otherLink) {
+                        otherLink.classList.remove('active');
+                    });
+
+                    link.classList.add('active');
+                });
+            });
+        });
+
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1000,
+            speedAsDuration: true
+        });
+
+        function NdryshoGjuhen() {
+            var zgjidh = document.getElementById('selektor');
+            var gjuhaezgj = zgjidh.value;
+            if (gjuhaezgj) {
+                window.location.href = gjuhaezgj;
+            }
+        }
+
+
+        document.getElementById('viti').textContent = new Date().getFullYear();
+
+        const ditet = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const indexi = new Date().getDay();
+        document.getElementById('DitaJaves').textContent = ditet[indexi];
+
+
+    </script>
+</body>
+
+</html>

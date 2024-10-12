@@ -1,0 +1,179 @@
+<html>
+<head>
+    <title>Rental Cars</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@500&family=Ubuntu:wght@700&family=Work+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <link rel="stylesheet" href="stylesFaq.css">
+  
+</head>
+  <body>
+  <section id="banner">
+      <img src="images/logo.png" class="logo">
+      <div class="banner-text">
+          <h1>FAQ</h1>
+      </div>
+    <div id="shiritiNav">
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>    
+            <li><a href="makinat.html">All Cars</a></li> 
+            <li><a href="#banner">FAQ</a></li> 
+            <li><a href="#footer">Contact</a></li> 
+            <li>
+              <select id="selektor" onchange="NdryshoGjuhen()">
+                  <option value="index.php">English</option>
+                  <option value="shqip.html">Albanian</option>
+                  <option value="italisht.html">Italian</option>
+              </select>
+        </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="images/menu.png" id="menu">
+    </div>
+
+      <a href="https://wa.me/+355682284220?text=Hello%20Vlora's%20Rental,%20I%20am%20interested%20in%20renting%20a%20car." class="ikon-w">
+              <i class="fa fa-whatsapp ikon-wp"></i>
+      </a>
+
+  </section>
+
+<section id="pyetjet">
+  <div class="titulli">
+    <h1>Frequently Asked Questions on Vlora's Rental</h1>
+  </div>
+  <div class="sherbimet-">
+  <h1>WHAT ARE THE PICK-UP TIMES FOR YOUR VECHIELS?</h1>
+  <div class="sherbimet--desc">
+      <div class="sherbimet--text">
+          <p>We are open everyday from 9am to 9pm. Although we are closed at 9 pm, we still deliver you the car you have booked at any time. You just need to contact us about the time of the pick-up and we will be there for you.</p>
+      </div>
+  </div>
+  </div>
+    <div class="sherbimet-">
+    <h1>HOW LONG IN ADVANCE DO I NEED TO BOOK A VEHICLE?</h1>
+    <div class="sherbimet--desc">
+        <div class="sherbimet--text">
+            <p>You can book our cars at any time. You just need to call or contact us on whatsApp and we will see what is available for you.</p>
+        </div>
+    </div>
+    </div>
+      <div class="sherbimet-">
+      <h1>HOW CAN I PAY FOR THE CAR RENTAL SERVICE?</h1>
+      <div class="sherbimet--desc">
+          <div class="sherbimet--text">
+              <p>For your convenience, payments are accepted in person at our center. This ensures a secure and straightforward transaction process, allowing you to settle your rental charges with ease when you visit us.</p>
+          </div>
+      </div>
+      </div>
+        <div class="sherbimet-">
+        <h1>WHAT HAPPENS IF I RETURN THE CAR LATE?</h1>
+        <div class="sherbimet--desc">
+            <div class="sherbimet--text">
+                <p>
+                While we understand that the comforts are hard to let go of, we value punctuality. Hence, if a renter is late in returning the car as per the stipulated deadline, an additional day’s charge is applied as per the category of the vehicle.</p>
+            </div>
+        </div>
+        </div>
+    <div class="sherbimet-">
+    <h1>CAN AN INTERNATIONAL DRIVER’S LICENSE WORK IN VLORE?</h1>
+    <div class="sherbimet--desc">
+        <div class="sherbimet--text">
+            <p>While Albanian Resident Visa Holders only need a valid Albanian Driving License, Visitors from GCC Countries need to provide a valid GCC country driving license. Tourists from countries other than the GCC group need to submit an international driving license to avail of car rental services.</p>
+        </div>
+    </div>
+    </div>
+</section>
+
+    <section id="footer">
+      <div class="titulli" style="color: white;">
+      <p style="color: white;">CONTACT</p>    
+      <h1>Get In Touch With Us</h1>
+      </div>
+    <div class="footer-rreshti">   
+    <div class="footer-djathtas">
+      <h1>Adress</h1>
+      <p>Skele, Rruga Kosova, Vlore 9401<i class="fa fa-map-marker"></i></p>
+      <a href="mailto:vlorasrental@gmail.com"><p>vlorasrental@gmail.com<i class="fa fa-paper-plane"></i></p></a>
+    <a href="tel:+3556868686"<p>+355 68 68 868<i class="fa fa-phone"></i></p></a>
+    </div>    
+    </div>
+    <div id="map" class="harta">
+    <iframe  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDdAr_WzQz_4SfTQ4xTRrerYw8Nf5cI-Wo&q=40.4596,19.4914"
+        allowfullscreen>
+    </iframe>
+    </div>
+
+    <div class="rrjetet-sociale">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-twitter"></i>
+      <p><span id="viti"></span> - <span id="DitaJaves"></span> <br> &copy; All Rights Reserved By Redi Çapoj </p>
+    </div>
+
+    </section> 
+
+
+
+    
+    <script>
+      
+      var menuBtn = document.getElementById("menuBtn")    
+      var sideNav = document.getElementById("shiritiNav")    
+      var menu = document.getElementById("menu") 
+
+      sideNav.style.right = "-250px";
+
+      menuBtn.onclick = function(){
+          if(sideNav.style.right == "-250px"){
+              sideNav.style.right = "0";
+              menu.src = "images/close.png";
+          }
+          else{
+              sideNav.style.right = "-250px";
+              menu.src = "images/menu.png";
+          }
+      }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var navLinks = document.querySelectorAll('#shiritiNav nav ul li a');
+
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+
+                  navLinks.forEach(function (otherLink) {
+                        otherLink.classList.remove('active');
+                    });
+
+                    link.classList.add('active');
+                });
+            });
+        });
+
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true
+      });
+
+        function NdryshoGjuhen() {
+            var zgjidh = document.getElementById('selektor');
+            var gjuhaezgj = zgjidh.value;  
+            if (gjuhaezgj) {
+                window.location.href = gjuhaezgj;
+            }
+        }
+
+        document.getElementById('viti').textContent = new Date().getFullYear();
+
+      const ditet = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday' , 'Friday', 'Saturday'];
+        const indexi = new Date().getDay();
+        document.getElementById('DitaJaves').textContent = ditet[indexi];
+
+    </script>
+  </body>
+</html>
